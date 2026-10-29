@@ -1,5 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Coodo is a points app for little kids, run by parents. Tap a plus for the good stuff, reveal a silly picture every day, earn a Saturday prize.">
+<meta property="og:title" content="Coodo">
+<meta property="og:description" content="Hooray for the good stuff. A points app for little kids, coming to iPhone.">
+<meta name="theme-color" content="#5B4BFF">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect x='8' y='8' width='104' height='104' rx='32' fill='%23FF7A59'/%3E%3Ccircle cx='60' cy='60' r='34' fill='%23FFC83D' stroke='%23E0A020' stroke-width='4'/%3E%3Ccircle cx='48' cy='56' r='8' fill='%23fff'/%3E%3Ccircle cx='72' cy='56' r='8' fill='%23fff'/%3E%3Ccircle cx='50' cy='58' r='4' fill='%231E1B3A'/%3E%3Ccircle cx='74' cy='58' r='4' fill='%231E1B3A'/%3E%3Cpath d='M50 72q10 9 20 0' stroke='%231E1B3A' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 <title>Coodo</title>
-<meta name="claude:viewport-fit-sides" content="cover">
+</head>
+<body>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800&display=swap">
 <style>
 /* Layout: one teaser page. Hero with mascot + phone, three reasons, signup. Single warm theme on purpose. */
@@ -118,3 +129,6 @@ document.getElementById('form').addEventListener('submit',e=>{ e.preventDefault(
   try{ const l=JSON.parse(localStorage.getItem('coodo-signups')||'[]'); l.push({e:v,t:Date.now()}); localStorage.setItem('coodo-signups',JSON.stringify(l)); }catch(x){}
   e.target.style.display='none'; document.getElementById('thanks').style.display='block'; });
 </script>
+
+</body>
+</html>
